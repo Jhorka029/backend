@@ -22,7 +22,7 @@ import com.iespp.app.repositories.RoleRepository;
 
 
 
-@CrossOrigin(origins = "https://cevicherias.spring.informaticapp.com/seguridad%20EESSP/frontend", maxAge = 3600)
+@CrossOrigin(origins = "https://cevicherias.spring.informaticapp.com", maxAge = 3600)
 @RestController
 @RequestMapping("/api/auth")
 public class AuthController {
@@ -188,7 +188,7 @@ public class AuthController {
 
             // Redirigimos al frontend con un mensaje de éxito
             return ResponseEntity.status(org.springframework.http.HttpStatus.FOUND)
-                    .header("Location", "https://cevicherias.spring.informaticapp.com/seguridad%20EESSP/frontend/login?verified=true")
+                    .header("Location", "https://cevicherias.spring.informaticapp.com/login?verified=true")
                     .build();
         }
 

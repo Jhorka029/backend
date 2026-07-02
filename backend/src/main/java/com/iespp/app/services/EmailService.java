@@ -22,7 +22,7 @@ public class EmailService {
             helper.setSubject("Confirma tu cuenta - IESPP Monseñor Elías Olázar");
 
             // Esta es la URL a la que el usuario hará clic (apunta a nuestro backend)
-            String urlVerificacion = "https://cevicherias.spring.informaticapp.com/seguridad%20EESSP/backend/api/auth/verify?code=" + codigoVerificacion;
+            String urlVerificacion = "https://backend-iespp.onrender.com/api/auth/verify?code=" + codigoVerificacion;
 
             String contenidoHtml = "<div style='font-family: Arial, sans-serif; padding: 20px; color: #333;'>"
                     + "<h2 style='color: #004085;'>¡Bienvenido al sistema, " + nombreUsuario + "!</h2>"
